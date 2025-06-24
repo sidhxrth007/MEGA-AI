@@ -16,7 +16,7 @@ function connect(conn, PORT) {
   
   if (!global.pairingCode) global.pairingCode = null
   
-  app.use('/assets', express.static(path.join(__dirname, 'Assets')))
+  app.use('/assets', express.static(path.join(__dirname, 'assets')))
 
   const limiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
@@ -24,7 +24,7 @@ function connect(conn, PORT) {
   })
 
   app.get('/', limiter, (req, res) => {
-    res.sendFile(path.join(__dirname, 'Assets', 'guru.html'))
+    res.sendFile(path.join(__dirname, 'assets', 'global.html'))
   })
 
   app.get('/pairing-status', (req, res) => {
