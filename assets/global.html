@@ -1,424 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link rel="icon" type="image/png" sizes="32x32" href="/logo">
-    <title>MEGA AI 🇵🇰🌙</title>
-
-    <script>
-        window.console = window.console || function(t) {};
-    </script>
-    <script>
-        if (document.location.search.match(/type=embed/gi)) {
-            window.parent.postMessage("resize", "*");
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEGA AI STATUS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #fff;
         }
-    </script>
-<style>
-   * {
-       padding: 0;
-       margin: 0;
-       outline: none;
-       -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-       box-sizing: border-box;
-   }
-
-   body {
-       background: #05705d;
-       background: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.8)), url("https://raw.githubusercontent.com/SuhailTechInfo/Suhail-Md/main/lib/assets/pk.jpg");
-       background-repeat: no-repeat;
-       background-size: cover;
-       background-position: center;
-       width: 98vw;
-       height: 97vh;
-   
-    }
-
-   #work {
-       width: 300px;
-       margin: 0 auto;
-       position: relative;
-       top: -20px;
-       -webkit-animation-name: routate;
-       -webkit-animation-duration: 4s;
-       -webkit-animation-iteration-count: infinite;
-       animation-name: routate;
-       animation-duration: 5s;
-       animation-iteration-count: infinite;
-   }
-
-   @-webkit-keyframes routate {
-       0% {
-           -webkit-transform: rotate(7deg);
-           -ms-transform: rotate(7deg);
-           transform: rotate(7deg);
-       }
-       50% {
-           -webkit-transform: rotate(-7deg);
-           -ms-transform: rotate(-7deg);
-           transform: rotate(-7deg);
-       }
-       100% {
-           -webkit-transform: rotate(7deg);
-           -ms-transform: rotate(7deg);
-           transform: rotate(7deg);
-       }
-   }
-
-   @keyframes routate {
-       0% {
-           -webkit-transform: rotate(7deg);
-           -ms-transform: rotate(7deg);
-           transform: rotate(7deg);
-       }
-       50% {
-           -webkit-transform: rotate(-7deg);
-           -ms-transform: rotate(-7deg);
-           transform: rotate(-7deg);
-       }
-       100% {
-           -webkit-transform: rotate(7deg);
-           -ms-transform: rotate(7deg);
-           transform: rotate(7deg);
-       }
-   }
-
-   #work #wire {
-       margin: 0 auto;
-       height: 130px;
-       width: 10px;
-       background: #261647;
-       border: 5px #0c032e solid;
-   }
-
-   #work #c1 {
-       position: absolute;
-       z-index: 5;
-       bottom: 0;
-       height: 300px;
-   }
-
-   #work .light {
-       width: 100%;
-       height: 100%;
-       padding: 30px;
-       margin: 0 auto;
-       background: rgba(255, 155, 0, 0.08);
-       -webkit-border-radius: 100%;
-       -moz-border-radius: 100%;
-       border-radius: 100%;
-       -webkit-animation-name: flash;
-       -webkit-animation-duration: 4s;
-       -webkit-animation-iteration-count: infinite;
-       animation-name: flash;
-       animation-duration: 1s;
-       animation-iteration-count: infinite;
-   }
-
-   @-webkit-keyframes flash {
-       0% {
-           background: rgba(255, 155, 0, 0.08);
-       }
-       50% {
-           background: rgba(255, 155, 0, 0.04);
-       }
-       100% {
-           background: rgba(255, 155, 0, 0.08);
-       }
-   }
-
-   @keyframes flash {
-       0% {
-           background: rgba(255, 155, 0, 0.08);
-       }
-       50% {
-           background: rgba(255, 155, 0, 0.04);
-       }
-       100% {
-           background: rgba(255, 155, 0, 0.08);
-       }
-   }
-
-   #fanos {
-       height: 380px;
-       padding: 10px;
-       margin: 0 auto;
-       position: relative;
-       top: -20px;
-   }
-
-   #small-circle {
-       margin: 0 auto;
-       width: 30px;
-       height: 30px;
-       -webkit-border-radius: 100%;
-       -moz-border-radius: 100%;
-       border-radius: 100%;
-       background: #261647;
-       border: 5px #0c032e solid;
-       position: relative;
-       z-index: 5;
-   }
-
-   #half-circle {
-       width: 120px;
-       height: 120px;
-       position: absolute;
-       top: 25px;
-       left: 50%;
-       -webkit-transform: translateX(-50%);
-       -ms-transform: translateX(-50%);
-       transform: translateX(-50%);
-       z-index: 1;
-       -webkit-border-radius: 100%;
-       -moz-border-radius: 100%;
-       border-radius: 100%;
-       background: #40315a;
-       border: 5px #0c032e solid;
-   }
-
-   #bottom-quppa {
-       margin: 0 auto;
-       position: relative;
-       top: 50px;
-       z-index: 3;
-   }
-
-   #line {
-       margin: 0 auto;
-       width: 200px;
-       height: 30px;
-       padding-top: 3px;
-       background: #261647;
-       border: 5px #0c032e solid;
-       overflow: hidden;
-       text-align: center;
-   }
-
-   #line .ball {
-       width: 15px;
-       height: 15px;
-       margin: auto 5px;
-       display: inline-block;
-       -webkit-border-radius: 100%;
-       -moz-border-radius: 100%;
-       border-radius: 100%;
-       background: #000000;
-       border: 5px #0c032e solid;
-   }
-
-   #top-triangle {
-       margin: 0 auto;
-       width: 210px;
-       height: 0;
-       border-left: 25px transparent solid;
-       border-right: 25px transparent solid;
-       border-bottom: 30px #0c032e solid;
-       position: relative;
-       top: -5px;
-   }
-
-   #top-triangle:after {
-       content: '';
-       display: block;
-       position: absolute;
-       z-index: 3;
-       left: 50%;
-       -webkit-transform: translateX(-50%);
-       -ms-transform: translateX(-50%);
-       transform: translateX(-50%);
-       top: 5px;
-       width: 155px;
-       height: 0;
-       border-left: 15px transparent solid;
-       border-right: 15px transparent solid;
-       border-bottom: 20px #40315a solid;
-   }
-
-   #box {
-       width: 170px;
-       margin: 0 auto;
-       height: 180px;
-       background: rgba(255, 255, 255, 0.1);
-       position: relative;
-       top: -10px;
-       z-index: 1;
-       border: 5px #0c032e solid;
-   }
-
-   #box #candel {
-       height: 60px;
-       width: 30px;
-       background: #ffffff;
-       border: 5px #0c032e solid;
-       border-bottom: 0;
-       position: absolute;
-       z-index: 1;
-       left: 65px;
-       bottom: 0;
-   }
-
-   #box #candel:after {
-       content: '';
-       display: block;
-       margin: 0 auto;
-       position: relative;
-       top: -20px;
-       width: 10px;
-       height: 15px;
-       -webkit-border-radius: 100%;
-       -moz-border-radius: 100%;
-       border-radius: 100%;
-       background: #ff9b00;
-       border: 5px #0c032e solid;
-   }
-
-   #box #col {
-       margin: 0 auto;
-       width: 90px;
-       height: 170px;
-       border-left: 5px #0c032e solid;
-       border-right: 5px #0c032e solid;
-       position: relative;
-       z-index: 2;
-       background: rgba(255, 255, 255, 0.1);
-   }
-
-   #final {
-       position: relative;
-       z-index: 4;
-       top: -15px;
-   }
-
-   #last-triangle {
-       margin: 0 auto;
-       width: 245px;
-       height: 0;
-       border-left: 25px transparent solid;
-       border-right: 25px transparent solid;
-       border-bottom: 25px #0c032e solid;
-       position: relative;
-       top: -5px;
-   }
-
-   #last-triangle:after {
-       content: '';
-       display: block;
-       position: absolute;
-       z-index: 3;
-       left: 50%;
-       -webkit-transform: translateX(-50%);
-       -ms-transform: translateX(-50%);
-       transform: translateX(-50%);
-       top: 5px;
-       width: 190px;
-       height: 0;
-       border-left: 15px transparent solid;
-       border-right: 15px transparent solid;
-       border-bottom: 15px #40315a solid;
-   }
-
-   h1 {
-       text-align: center;
-       position: relative;
-       /* bottom: 20px; */
-       font: bold 2em "Diwani Letter";
-       color: #11c4ec;
-   }
-   ul{
-    /* position: relative; */
-    margin: 20px;
-    list-style: none;
-    /* list-style: none; */
-    background:#3c3c3c;
-    /* padding: 10px auto; */
-    /* align-items: center; */
- 
-
-   }
-   ul li{    
-    display:inline-block;
-    /* margin: 10px auto; */
-    margin: 0 auto;
-    padding: 10px;
-    /* text-align: right;  */
-    /* color: aqua; */
-    /* align-items: center; */
-
-   }
-li a{
-    color: rgb(3, 152, 251);
-    /* font-size: 20px; */
-}
-
-a:hover{
-    color: rgb(120, 4, 193);
-    /* font-size: 20px; */
-}
-
-
-
-</style>
-
+        .container {
+            width: 90%;
+            max-width: 600px;
+            background: rgba(30, 30, 30, 0.7);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .status {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .pairing-code {
+            font-size: 28px;
+            font-weight: bold;
+            background-color: rgba(50, 50, 50, 0.8);
+            color: #4CAF50;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 8px;
+            text-align: center;
+            letter-spacing: 2px;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+        }
+        .instructions {
+            text-align: left;
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgba(40, 40, 40, 0.5);
+            border-radius: 8px;
+            line-height: 1.6;
+        }
+        .instructions h3 {
+            margin-top: 0;
+            color: #4CAF50;
+        }
+        .hidden {
+            display: none;
+        }
+        .success-message {
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+        #loading-container {
+            text-align: center;
+        }
+        .loading-spinner {
+            width: 40px;
+            height: 40px;
+            margin: 20px auto;
+            border: 4px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            border-top: 4px solid #4CAF50;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        /* Dashboard styles */
+        .dashboard {
+            background-color: rgba(40, 40, 40, 0.7);
+            border-radius: 8px;
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid rgba(76, 175, 80, 0.3);
+        }
+        .dashboard-title {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #4CAF50;
+        }
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .stat-item {
+            background-color: rgba(50, 50, 50, 0.5);
+            padding: 10px;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .stat-label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        .stat-value {
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        .divider {
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.1);
+            margin: 15px 0;
+        }
+        .top-plugins {
+            margin-top: 15px;
+        }
+        .plugin-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 5px 0;
+        }
+    </style>
 </head>
-
-<body translate="no">
-    <ul>
-        <li><a href='https://github.com/GlobalTechInfo/EXTERNAL-PLUGINS' > PLUGINS </a></li>
-        <li><a href='https://github.com/GlobalTechInfo/MEGA-AI' > REPO </a></li>
-        <li><a href='https://youtube.com/@GlobalTechInfo' > YOUTUBE </a></li>
-        <li><a href='https://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07' > WHATSAPP </a></li>
-        <li><a href='https://t.me/Global_TechInfo' > TELEGRAM </a></li>
-    </ul>
-
-
-    <div id="work">
-        <div id="wire"></div>
-        <div id="fanos">
-            <div id="small-circle"></div>
-            <div id="half-circle"></div>
-            <div id="bottom-quppa">
-                <div id="line">
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                    <span class="ball"></span>
-                </div>
-                <div id="top-triangle"></div>
-                <div id="box">
-                    <div id="candel"></div>
-                    <div id="col"></div>
-                </div>
-                <div id="final">
-                    <div id="line"></div>
-                    <div id="last-triangle"></div>
-                </div>
+<body>
+    <div class="container">
+        <div class="status">MEGA AI STATUS</div>
+        
+        <div id="loading-container">
+            <p>Starting MEGA AI... Please Wait.</p>
+            <div class="loading-spinner"></div>
+        </div>
+        
+        <div id="pairing-container" class="hidden">
+            <p>Use this pairing code to connect WhatsApp:</p>
+            <div id="pairing-code" class="pairing-code">Loading pairing code...</div>
+            
+            <div class="instructions">
+                <h3>Connection Instructions:</h3>
+                <ol>
+                    <li>Open WhatsApp on your phone</li>
+                    <li>Tap Menu or Settings and select Linked Devices</li>
+                    <li>Tap on "Link a Device"</li>
+                    <li>When prompted for a QR code, tap "Link with phone number instead"</li>
+                    <li>Enter the pairing code shown above</li>
+                </ol>
             </div>
         </div>
-        <div class="light" id="c1">
-            <div class="light">
-                <div class="light">
-                    <div class="light">
+        
+        <div id="success-container" class="hidden">
+            <div class="success-message">Bot is now working!</div>
+            <p>Your WhatsApp Bot is successfully connected and running.</p>
+            
+            <div class="dashboard">
+                <div class="dashboard-title">🤖 MEGA AI DASHBOARD 🤖</div>
+                
+                <div class="dashboard-grid">
+                    <div class="stat-item">
+                        <span class="stat-label">👥 Users</span>
+                        <span id="user-count" class="stat-value">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">📝 Registered</span>
+                        <span id="registered-users" class="stat-value">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">👥 Groups</span>
+                        <span id="group-count" class="stat-value">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">💬 Private Chats</span>
+                        <span id="chat-count" class="stat-value">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">🛡️ Banned Users</span>
+                        <span id="banned-users" class="stat-value">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">🟢 Active Groups</span>
+                        <span id="active-groups" class="stat-value">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">🔌 Plugins</span>
+                        <span id="plugin-count" class="stat-value">-</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-label">⏱️ Uptime</span>
+                        <span id="uptime" class="stat-value">-</span>
+                    </div>
+                </div>
+                
+                <div class="divider"></div>
+                
+                <div class="top-plugins">
+                    <div class="dashboard-title">🔝 Top Plugins</div>
+                    <div id="plugins-container">
+                        <div class="plugin-item">Loading plugin data...</div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-
-    <h1 style="color: #d4cfcf; "> MEGA AI ❤️</h1>
-<br>
-    <h1>
-        A Simple <span style="border-bottom:4px dotted #3c3c3c; color: #d4cfcf;">Pakistani</span> Whatsapp Bot.
+    <script>
+        // Check for pairing status on page load and every 3 seconds
+        function checkStatus() {
+            fetch('/pairing-status')
+                .then(response => response.json())
+                .then(data => {
+                    // Hide loading once we have data
+                    document.getElementById('loading-container').classList.add('hidden');
+                    
+                    if (data.connected) {
+                        // If connected, show success message and dashboard
+                        document.getElementById('pairing-container').classList.add('hidden');
+                        document.getElementById('success-container').classList.remove('hidden');
+                        
+                        // If stats are available, update the dashboard
+                        if (data.stats) {
+                            updateDashboard(data.stats);
+                        } else {
+                            // If no stats yet, fetch them
+                            fetchAiStats();
+                        }
+                    } else if (data.pairingCode) {
+                        // If pairing code available but not connected, show the code
+                        document.getElementById('pairing-container').classList.remove('hidden');
+                        document.getElementById('pairing-code').textContent = data.pairingCode;
+                    }
+                })
+                .catch(error => {
+                    console.error('Error checking status:', error);
+                });
+        }
         
-    </h1>
-  
+        // Fetch Ai statistics
+        function fetchAiStats() {
+            fetch('/bot-stats')
+                .then(response => response.json())
+                .then(data => {
+                    updateDashboard(data);
+                })
+                .catch(error => {
+                    console.error('Error fetching stats:', error);
+                });
+        }
+        
+        // Update dashboard with statistics
+        function updateDashboard(stats) {
+            // Update user statistics
+            document.getElementById('user-count').textContent = stats.users || '-';
+            document.getElementById('registered-users').textContent = stats.registeredUsers || '-';
+            document.getElementById('banned-users').textContent = stats.bannedUsers || '-';
+            
+            // Update chat statistics
+            document.getElementById('group-count').textContent = stats.groups || '-';
+            document.getElementById('chat-count').textContent = stats.privateChats || '-';
+            document.getElementById('active-groups').textContent = stats.activeGroups || '-';
+            
+            // Update system info
+            document.getElementById('plugin-count').textContent = stats.plugins || '-';
+            document.getElementById('uptime').textContent = stats.uptime || '-';
+            
+            // Update top plugins
+            if (stats.topPlugins && stats.topPlugins.length > 0) {
+                const pluginsContainer = document.getElementById('plugins-container');
+                pluginsContainer.innerHTML = '';
+                
+                stats.topPlugins.forEach(plugin => {
+                    const pluginItem = document.createElement('div');
+                    pluginItem.className = 'plugin-item';
+                    pluginItem.innerHTML = `
+                        <span>${plugin.name.replace('.js', '')}</span>
+                        <span class="stat-value">${plugin.total}</span>
+                    `;
+                    pluginsContainer.appendChild(pluginItem);
+                });
+            } else {
+                document.getElementById('plugins-container').innerHTML = 
+                    '<div class="plugin-item">No plugin usage data available yet</div>';
+            }
+        }
 
-
+        // Check immediately and then every 3 seconds
+        checkStatus();
+        setInterval(checkStatus, 3000);
+        
+        // Fetch updated stats every 30 seconds when connected
+        setInterval(() => {
+            if (!document.getElementById('success-container').classList.contains('hidden')) {
+                fetchAiStats();
+            }
+        }, 30000);
+    </script>
 </body>
-
 </html>
