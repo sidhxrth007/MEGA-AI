@@ -8,6 +8,7 @@ import path, { join } from 'path'
 import { platform } from 'process'
 import { fileURLToPath, pathToFileURL } from 'url'
 import * as ws from 'ws'
+import PHONENUMBER_MCC from './lib/mcc.js'
 import SaveCreds from './lib/socket.js'
 import clearTmp from './lib/tempclear.js'
 global.__filename = function filename(pathURL = import.meta.url, rmPrefix = platform !== 'win32') {
@@ -44,7 +45,6 @@ const {
   fetchLatestWaWebVersion,
   makeCacheableSignalKeyStore,
   makeInMemoryStore,
-  PHONENUMBER_MCC,
   Browsers,
   proto,
   delay,
