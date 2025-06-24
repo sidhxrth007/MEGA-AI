@@ -4,18 +4,21 @@
     <img alt="ULTRA" src="https://i.ibb.co/m5ftR5q7/IMG-20250603-WA0196.jpg">
   </a>
 </p>
-<p align="center">
-<a href="https://github.com/GlobalTechInfo?tab=followers"><img title="Followers" src="https://img.shields.io/github/followers/GlobalTechInfo?label=Followers&style=social"></a>
-<a href="https://github.com/GlobalTechInfo/MEGA-AI/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/GlobalTechInfo/MEGA-AI?&style=social"></a>
-<a href="https://github.com/GlobalTechInfo/MEGA-AI/network/members"><img title="Fork" src="https://img.shields.io/github/forks/GlobalTechInfo/MEGA-AI?style=social"></a>
-<a href="https://github.com/GlobalTechInfo/MEGA-AI/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/GlobalTechInfo/MEGA-AI?label=Watching&style=social"></a>
-</p>
-<p align="center">
+<div align="center">
+
+<img src="https://komarev.com/ghpvc/?username=GlobalTechInfo&label=Profile+Views&color=ff00ff&style=flat-square" />
+<img src="https://img.shields.io/github/stars/GlobalTechInfo/MEGA-AI?color=ff00ff&style=flat-square" />
+<img src="https://img.shields.io/github/forks/GlobalTechInfo/MEGA-AI?color=ff00ff&style=flat-square" />
+<img src="https://img.shields.io/github/repo-size/GlobalTechInfo/MEGA-AI?color=ff00ff&style=flat-square" />
+<img src="https://img.shields.io/github/last-commit/GlobalTechInfo/MEGA-AI?color=ff00ff&style=flat-square" />
+
+</div>
   
 ----
 
- <p align="center"><img src="https://profile-counter.glitch.me/{MEGA-AI}/count.svg" alt="GlobalTechInfo :: Visitor's Count" old_src="https://profile-counter.glitch.me/{GlobalTechInfo}/count.svg" /></p>
-
+ <p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=24&duration=4000&pause=1000&color=FF0000&center=true&vCenter=true&width=500&lines=ULTIMATE+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+BAILEYS;FAST++SECURE++RELIABLE" alt="Typing SVG"/>
+</p>
 ----
 <h1 align="center"> EXTERNAL PLUGINS </h1>
 
@@ -43,7 +46,7 @@ set the Env Vars.
 | Variable | Description 
 |---|---| 
 | REMOVEBG_KEY | API key for www.remove.bg |
-| SESSION_ID | That You Have Got Via Pairing |
+| MONGODB_URI | Your MongoDB connection URI (Must Needed |
 | PREFIX | put any one symbol here except @,# and + , leave it Blank if you want to use multi prefix |
 | MODE | mode public or private |
 | statusview | make it true if you want bot to view status | 
@@ -53,6 +56,25 @@ set the Env Vars.
 
 
 ----
+
+<p>By default, the server listens on port 5000 (or the port defined in the <code>PORT</code> environment variable).  
+Open your browser at <a href="http://localhost:5000">http://localhost:5000</a> to access the pairing interface where the pairing code and connection status are displayed.</p>
+
+<h2>Usage</h2>
+
+<p>After starting, the bot will print a pairing code.  
+Open WhatsApp > Linked Devices > Link a Device > Link with phone number and enter the pairing code to connect.</p>
+
+<p>Commands are invoked with a prefix (default is <code>.</code>). For example:</p>
+
+<pre><code>
+.ping      # Check bot response time
+.menu      # Display command menu and help
+.list      # List all available commands
+.alive     # Show bot status
+</code></pre>
+
+------
 
 
 ## 🎬 Watch the Tutorial
@@ -80,12 +102,6 @@ To set up the MEGA AI quickly, follow our detailed tutorial on YouTube:
      To set up the MEGA AI quickly, first fork this repository:
 [![MEGA AI Github Repo](https://img.shields.io/badge/Github-Fork%20Repo-red?style=for-the-badge&logo=Github)](https://github.com/GlobalTechInfo/MEGA-AI/fork)
 
-### PAIRING CODE & QR CODE
-   - Visit site to generate a pairing code and get **SESSION ID.**
-
-   - **Remember If It Shows 502 Bad Gateway That Means API Is Restarting, So Wait A While Then Refresh The Web Page And Then Pairing Options Will Be Available**
-
-     [![MEGA AI Github Repo](https://img.shields.io/badge/Whatsapp-Pair%20Code-green?style=for-the-badge&logo=Whatsapp)](https://mega-pair.onrender.com)
 
 ### Step-by-Step Deployment Guide
 
