@@ -6,7 +6,7 @@ import { unwatchFile, watchFile } from 'fs'
 import chalk from 'chalk'
 import fetch from 'node-fetch'
 import Pino from 'pino'
-import { loadMessage as mongoLoadMessage } from './lib/auth/mongo-store.js'
+import { loadMessage as mongoLoadMessage } from './auth/mongo-store.js'
 
 /**
  * @type {import("baileys-pro")}
