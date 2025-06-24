@@ -1,5 +1,5 @@
 import fetch from 'node-fetch'
-import { delay } from '@whiskeysockets/baileys'
+import { delay } from 'baileys-pro'
 
 let handler = async (m, { conn, text, args, usedPrefix, command }) => {
   try {
