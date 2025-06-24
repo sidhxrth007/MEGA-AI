@@ -17,14 +17,9 @@
       "required": true,
       "value": "MEGA-AI"
     },
-    "DATABASE_URL": {
+    "MONGODB_URI": {
       "description": "your mongodb database url",
       "required": false,
-      "value": ""
-    },
-    "SESSION_ID": {
-      "description": "your session id",
-      "required": true,
       "value": ""
     },
     "MODE": {
