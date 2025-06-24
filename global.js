@@ -184,7 +184,7 @@ const connectionOptions = {
     level: 'fatal',
   }),
   printQRInTerminal: true,
-  browser: Browsers.macOS("Safari"),
+  browser: ["Ubuntu", "Chrome", "20.0.04"],
   auth: {
     creds: state.creds,
     keys: makeCacheableSignalKeyStore(
