@@ -1,4 +1,4 @@
-import pkg from '@whiskeysockets/baileys';
+import pkg from 'baileys-pro';
 const { proto, prepareWAMessageMedia, generateWAMessageFromContent } = pkg;
 import moment from 'moment-timezone';
 import { createHash } from 'crypto';
