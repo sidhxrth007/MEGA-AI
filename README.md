@@ -19,21 +19,18 @@
  <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=Orbitron&weight=600&size=24&duration=4000&pause=1000&color=FF0000&center=true&vCenter=true&width=500&lines=ULTIMATE+WHATSAPP+BOT;MULTI-DEVICE+SUPPORT;POWERED+BY+BAILEYS;FAST++SECURE++RELIABLE" alt="Typing SVG"/>
 </p>
-----
+
 <h1 align="center"> EXTERNAL PLUGINS </h1>
 
 <p align="center">
 <a href="https://github.com/GlobalTechInfo/EXTERNAL-PLUGINS"><img title="Author" src="https://img.shields.io/badge/MEGA AI-PLUGINS-black?style=for-the-badge&logo=Github"></a>
 <p/>
-
   
 ----
  <h2 align="center">  NOTE
 </h2>
 
-#### 1: No Worries If You Don't Have pre connection/SESSION_ID , Just Put Your Number In The Value Of BOT_NUMBER, e.g BOT_NUMBER = '923444844XXX' , Either In config.js or .env file , And Deploy The Bot, You'll Get A Pairing Code Directly In The Terminal at The End Of Deployment, Pair And Get Connected.
-
-#### 2: For Render, Koyeb, Glitch, Gcloud etc. Put Your App Url In Environment Variables ( APP_URL ) And Your Bot Will Runs 24/7 Unlimited.
+#### Just Put Your Number In The Value Of BOT_NUMBER, e.g BOT_NUMBER = '923444844XXX' , Either In config.js or .env file , And Deploy The Bot, You'll Get A Pairing Code Directly In The Terminal at The End Of Deployment, Pair And Get Connected.
 
 ----
 
