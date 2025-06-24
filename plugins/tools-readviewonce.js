@@ -1,4 +1,4 @@
-let { downloadContentFromMessage } = await import('@whiskeysockets/baileys')
+let { downloadContentFromMessage } = await import('baileys-pro')
 
 var handler = async (m, { conn }) => {
   if (!/viewOnce/.test(m.quoted?.mtype)) throw '✳️❇️ Its Not a ViewOnce Message'
