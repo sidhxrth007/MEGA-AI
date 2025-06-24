@@ -65,7 +65,7 @@ const homeLimiter = rateLimit({
 })
 
 app.get('/', homeLimiter, (req, res) => {
-  res.sendFile(path.join(__dirname, 'Assets', 'global.html'))
+  res.sendFile(path.join(__dirname, 'assets', 'global.html'))
 })
 
 app.get('/pairing-status', (req, res) => {
