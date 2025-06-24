@@ -1,6 +1,6 @@
 
 
-import { areJidsSameUser } from '@whiskeysockets/baileys'
+import { areJidsSameUser } from 'baileys-pro'
 
 export async function before(m, { participants, conn }) {
 
