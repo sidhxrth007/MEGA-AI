@@ -46,7 +46,7 @@ set the Env Vars.
 | Variable | Description 
 |---|---| 
 | REMOVEBG_KEY | API key for www.remove.bg |
-| MONGODB_URI | Your MongoDB connection URI (Must Needed |
+| MONGODB_URI | Your MongoDB connection URI (Must Needed) |
 | PREFIX | put any one symbol here except @,# and + , leave it Blank if you want to use multi prefix |
 | MODE | mode public or private |
 | statusview | make it true if you want bot to view status | 
