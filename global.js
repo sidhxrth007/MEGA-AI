@@ -209,17 +209,25 @@ if (!conn.authState.creds.registered) {
     }
     process.exit(0)
   }
+  // Log info before starting
+conn.logger.info('\nWaiting For Login\n');
 
-  setTimeout(async () => {
+// Wait 3 seconds before requesting pairing code
+setTimeout(async () => {
   try {
+    // Request pairing code
     let code = await conn.requestPairingCode(phoneNumber, "MEGAAI44");
+
+    // Format code like XXXX-XXXX-XXXX
     code = code?.match(/.{1,4}/g)?.join('-') || code;
 
     global.pairingCode = code;
 
+    // Log pairing code with colors
     const pairingCodeFormatted = chalk.bold.greenBright('Your Pairing Code:') + ' ' + chalk.bgGreenBright(chalk.black(code));
     console.log(pairingCodeFormatted);
 
+    // Send pairing code to parent process if applicable
     if (process.send) {
       process.send({ 
         type: 'pairing-code', 
@@ -228,14 +236,16 @@ if (!conn.authState.creds.registered) {
       });
     }
 
-    // Wait for 1 minute (60000 ms)
+    // Wait for 1 minute to allow user to pair
     await new Promise(resolve => setTimeout(resolve, 60000));
 
-    // Continue further logic here after wait
-    // e.g., start connection, listen for events, etc.
+    // After waiting, continue with next steps here
+    // For example, start connection or listen for events
+    conn.logger.info('1 minute passed, continuing with connection...');
 
   } catch (error) {
     console.log(chalk.bgBlack(chalk.redBright("Failed to generate pairing code:")), error);
+
     if (process.send) {
       process.send({ 
         type: 'pairing-code', 
@@ -245,10 +255,7 @@ if (!conn.authState.creds.registered) {
     }
   }
 }, 3000);
-
-conn.logger.info('\nWaiting For Login\n');
   
-
 if (!opts['test']) {
   if (global.db) {
     setInterval(async () => {
