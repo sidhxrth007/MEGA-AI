@@ -34,6 +34,7 @@ import { default as Pino, default as pino } from 'pino'
 import syntaxerror from 'syntax-error'
 import { format } from 'util'
 import yargs from 'yargs'
+import PHONENUMBER_MCC from './lib/mcc.js';
 import { makeWASocket, protoType, serialize } from './lib/simple.js'
 
 const {
@@ -43,8 +44,7 @@ const {
   makeCacheableSignalKeyStore,
   proto,
   delay,
-  jidNormalizedUser,
-  PHONENUMBER_MCC,
+  jidNormalizedUser
 } = await (
   await import('baileys-pro')
 ).default
