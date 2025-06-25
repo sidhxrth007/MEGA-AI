@@ -41,6 +41,7 @@ const {
   DisconnectReason,
   MessageRetryMap,
   fetchLatestWaWebVersion,
+  Browsers,
   makeCacheableSignalKeyStore,
   proto,
   delay,
@@ -120,7 +121,7 @@ const connectionOptions = {
   }),
   printQRInTerminal: false,
   version: [2, 3000, 1023223821],
-  browser: ["Ubuntu", "Chrome", "20.0.04"],
+  browser: Browsers.ubuntu('Chrome'),
   auth: {
     creds: state.creds,
     keys: makeCacheableSignalKeyStore(
@@ -255,7 +256,8 @@ setTimeout(async () => {
     }
   }
 }, 3000);
-  
+}
+
 if (!opts['test']) {
   if (global.db) {
     setInterval(async () => {
