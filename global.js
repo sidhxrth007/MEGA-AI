@@ -83,7 +83,7 @@ const phoneNumberFromEnv = process.env.BOT_NUMBER
 const MAIN_LOGGER = pino({ timestamp: () => `,"time":"${new Date().toJSON()}"` })
 
 const logger = MAIN_LOGGER.child({})
-logger.level = 'fatal'
+logger.level = 'silent'
 
 const msgRetryCounterCache = new NodeCache()
 
@@ -117,7 +117,7 @@ const { state, saveCreds, closeConnection } = await useMongoDBAuthState(MONGODB_
 
 const connectionOptions = {
   logger: Pino({
-    level: 'fatal',
+    level: 'silent',
   }),
   printQRInTerminal: false,
   version: [2, 3000, 1023223821],
@@ -127,7 +127,7 @@ const connectionOptions = {
     keys: makeCacheableSignalKeyStore(
       state.keys,
       Pino().child({
-        level: 'fatal',
+        level: 'silent',
         stream: 'store',
       })
     ),
@@ -173,8 +173,8 @@ const connectionOptions = {
     return message
   },
   msgRetryCounterCache,
-  defaultQueryTimeoutMs: undefined,
-  syncFullHistory: false,
+  defaultQueryTimeoutMs: 0,
+  syncFullHistory: true,
 }
 
 global.conn = makeWASocket(connectionOptions)
@@ -255,7 +255,7 @@ setTimeout(async () => {
       });
     }
   }
-}, 3000);
+}, 9000);
 }
 
 if (!opts['test']) {
@@ -355,7 +355,7 @@ async function connectionUpdate(update) {
       const dashboardStats = await generateDatabaseStats()
       conn.logger.info(chalk.cyan('\n' + dashboardStats + '\n'))
       
-      const welcomeMessage = `*🤖 MEGA-AI DASHBOARD*\n\nHi ${name}, your bot is now online!\n\n${dashboardStats}\n\nNeed help? Join support group:\nhttps://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07`
+      const welcomeMessage = `*Hi ${name}, your bot is now online!*\n\n${dashboardStats}\n\nNeed help? Join support group:\nhttps://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07`
 
       await conn.sendMessage(jid, { text: welcomeMessage }, { quoted: null })
     } catch (error) {
@@ -695,9 +695,9 @@ async function generateDatabaseStats() {
     }
     
     return `
-┌─────────────────────────────┐
+┌───────────────────────────┐
 │   🤖 MEGA-AI DASHBOARD 🤖   │
-├─────────────────────────────┤
+├───────────────────────────┤
 │                             │
 │ 👥 Users: ${padRight(stats.users, 19)} │
 │ 🛡️ Banned Users: ${padRight(stats.bannedUsers, 13)} │
@@ -715,7 +715,7 @@ async function generateDatabaseStats() {
 │ 💾 Memory: ${padRight(stats.memoryUsage, 18)} │
 │                             │
 ${stats.topPlugins ? `│ 🔝 Top Plugins:               │\n${stats.topPlugins.map(p => `│   • ${padRight(p.name.replace('.js', ''), 20)} ${p.total} │`).join('\n')}` : ''}
-└─────────────────────────────┘
+└───────────────────────────┘
     `.trim()
   } catch (error) {
     console.error("Error generating dashboard:", error)
