@@ -731,4 +731,4 @@ function formatUptime(seconds) {
 
 function padRight(text, length) {
   return String(text).padEnd(length)
-        }
+        };
