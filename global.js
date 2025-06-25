@@ -695,9 +695,9 @@ async function generateDatabaseStats() {
     }
     
     return `
-┌───────────────────────────┐
+┌─────────────────────────────┐
 │   🤖 MEGA-AI DASHBOARD 🤖   │
-├───────────────────────────┤
+├─────────────────────────────┤
 │                             │
 │ 👥 Users: ${padRight(stats.users, 19)} │
 │ 🛡️ Banned Users: ${padRight(stats.bannedUsers, 13)} │
@@ -715,14 +715,13 @@ async function generateDatabaseStats() {
 │ 💾 Memory: ${padRight(stats.memoryUsage, 18)} │
 │                             │
 ${stats.topPlugins ? `│ 🔝 Top Plugins:               │\n${stats.topPlugins.map(p => `│   • ${padRight(p.name.replace('.js', ''), 20)} ${p.total} │`).join('\n')}` : ''}
-└───────────────────────────┘
+└─────────────────────────────┘
     `.trim()
   } catch (error) {
     console.error("Error generating dashboard:", error)
     return "Error generating dashboard statistics"
   }
 }
-
 
 function formatUptime(seconds) {
   const days = Math.floor(seconds / (3600 * 24))
