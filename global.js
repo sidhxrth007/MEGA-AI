@@ -211,36 +211,43 @@ if (!conn.authState.creds.registered) {
   }
 
   setTimeout(async () => {
-    try {
-      let code = await conn.requestPairingCode(phoneNumber, "MEGAAI44")
-      code = code?.match(/.{1,4}/g)?.join('-') || code
-      
-      global.pairingCode = code
-      
-      const pairingCodeFormatted = chalk.bold.greenBright('Your Pairing Code:') + ' ' + chalk.bgGreenBright(chalk.black(code))
-      console.log(pairingCodeFormatted)
-      
-      if (process.send) {
-        process.send({ 
-          type: 'pairing-code', 
-          code: code, 
-          error: false 
-        })
-      }
-    } catch (error) {
-      console.log(chalk.bgBlack(chalk.redBright("Failed to generate pairing code:")), error)
-      if (process.send) {
-        process.send({ 
-          type: 'pairing-code', 
-          code: 'ERROR: Failed to generate pairing code', 
-          error: true 
-        })
-      }
-    }
-  }, 3000)
-}
+  try {
+    let code = await conn.requestPairingCode(phoneNumber, "MEGAAI44");
+    code = code?.match(/.{1,4}/g)?.join('-') || code;
 
-conn.logger.info('\nWaiting For Login\n')
+    global.pairingCode = code;
+
+    const pairingCodeFormatted = chalk.bold.greenBright('Your Pairing Code:') + ' ' + chalk.bgGreenBright(chalk.black(code));
+    console.log(pairingCodeFormatted);
+
+    if (process.send) {
+      process.send({ 
+        type: 'pairing-code', 
+        code: code, 
+        error: false 
+      });
+    }
+
+    // Wait for 1 minute (60000 ms)
+    await new Promise(resolve => setTimeout(resolve, 60000));
+
+    // Continue further logic here after wait
+    // e.g., start connection, listen for events, etc.
+
+  } catch (error) {
+    console.log(chalk.bgBlack(chalk.redBright("Failed to generate pairing code:")), error);
+    if (process.send) {
+      process.send({ 
+        type: 'pairing-code', 
+        code: 'ERROR: Failed to generate pairing code', 
+        error: true 
+      });
+    }
+  }
+}, 3000);
+
+conn.logger.info('\nWaiting For Login\n');
+  
 
 if (!opts['test']) {
   if (global.db) {
