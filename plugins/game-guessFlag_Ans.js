@@ -1,4 +1,4 @@
-import similarity from 'similarity'
+/* import similarity from 'similarity'
 const threshold = 0.72
 export async function before(m) {
   let id = m.chat
@@ -34,3 +34,5 @@ export async function before(m) {
   return !0
 }
 export const exp = 0
+
+*/
