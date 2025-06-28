@@ -30,7 +30,7 @@
  <h2 align="center">  NOTE
 </h2>
 
-#### Just Put Your Number In The Value Of BOT_NUMBER, e.g BOT_NUMBER = '923444844XXX' , Either In config.js or .env file , And Deploy The Bot, You'll Get A Pairing Code Directly In The Terminal at The End Of Deployment, Pair And Get Connected.
+#### Just Put Your Number In The Value Of BOT_NUMBER, e.g BOT_NUMBER = '923444844XXX' ,In .env file , And Deploy The Bot, You'll Get A Pairing Code Directly In The Terminal at The End Of Deployment, Pair And Get Connected.
 
 ----
 
@@ -49,7 +49,7 @@ set the Env Vars.
 | statusview | make it true if you want bot to view status | 
 | OWNERS | owner number e.g 923444844060 | 
 | BOTNAME | Your Bot Name | 
-| antidelete | bot will forward deleted messages if you make it true | 
+| BOT_NUMBER | On this you will get pairing code (Must Needed)| 
 
 
 ----
