@@ -1,12 +1,12 @@
 let handler = async (m, { args, usedPrefix, command }) => {
     // Check if the username (args[0]) is provided
     if (!args[0]) {
-        return m.reply('Username and Repository name is missing. Example: GlobalTechInfo ULTRA-MD');
+        return m.reply('Username and Repository name is missing. Example: GlobalTechInfo MEGA-AI');
     }
 
     // Check if the repository (args[1]) is provided
     if (!args[1]) {
-        return m.reply('Repository name is missing. Example: ULTRA-MD');
+        return m.reply('Username and Repository name is missing. Example: GlobalTechInfo MEGA-AI');
     }
 
     // Construct the GitHub URL for the repository zip file
