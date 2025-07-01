@@ -771,7 +771,7 @@ export async function deleteUpdate(message) {
     const remoteJid = message.remoteJid || message.jid
     const participant = message.participant || remoteJid
     if (fromMe) return
-    const raw = await mongoLoadMessage(id, remoteJid, process.env.DB_NAME || 'guru_bot')
+    const raw = await mongoLoadMessage(id, remoteJid, process.env.DB_NAME || 'mega_ai')
     if (!raw) return
     const msg = this.serializeM(raw)
     if (!msg) return
