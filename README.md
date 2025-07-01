@@ -27,10 +27,18 @@
 <p/>
   
 ----
- <h2 align="center">  NOTE
+ <h2 align="center">  🚨 NOTE 🚨
 </h2>
 
-#### Just Put Your Number In The Value Of BOT_NUMBER, e.g BOT_NUMBER = '923444844XXX' ,In .env file , And Deploy The Bot, You'll Get A Pairing Code Directly In The Terminal at The End Of Deployment, Pair And Get Connected.
+- **Just Put Your Number In The Value Of BOT_NUMBER, e.g BOT_NUMBER = '923444844XXX' ,In .env file and Deploy The Bot.**
+
+- **You'll Get A Pairing Code ( MEGA-AI44 ) Directly In The Terminal at The End Of Deployment, Pair And Get Connected.**
+
+- **If You Gets Any Problem During Connecting to WhatsApp Just Change The DB_NAME in env**
+
+- **You Have To Change The DB_NAME variable every Time You Redpoly The Bot**
+
+- **Example : DB_NAME = 'guru_bot' , Change To DB_NAME = 'something'**
 
 ----
 
