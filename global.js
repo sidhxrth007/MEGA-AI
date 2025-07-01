@@ -55,7 +55,7 @@ dotenv.config()
 const groupMetadataCache = new NodeCache({ stdTTL: 5 * 60, useClones: false })
 
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017'
-const DB_NAME = process.env.DB_NAME || 'mega_ai'
+const DB_NAME = process.env.DB_NAME || 'guru_bot'
 
 const globalDB = new MongoDB(MONGODB_URI)
 
