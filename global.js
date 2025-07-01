@@ -55,7 +55,7 @@ dotenv.config()
 const groupMetadataCache = new NodeCache({ stdTTL: 5 * 60, useClones: false })
 
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017'
-const DB_NAME = process.env.DB_NAME || 'guru_bot'
+const DB_NAME = process.env.DB_NAME || 'mega_ai'
 
 const globalDB = new MongoDB(MONGODB_URI)
 
@@ -355,7 +355,7 @@ async function connectionUpdate(update) {
       const dashboardStats = await generateDatabaseStats()
       conn.logger.info(chalk.cyan('\n' + dashboardStats + '\n'))
       
-      const welcomeMessage = `*Hi ${name}, your bot is now online!*\n\n${dashboardStats}\n\nNeed help? Join support group:\nhttps://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07`
+      const welcomeMessage = `*🤖 MEGA-AI CONNECTED*\n\nHi ${name}, your bot is now online!*\n\n${dashboardStats}\n\nNeed help? Join support group:\nhttps://whatsapp.com/channel/0029VagJIAr3bbVBCpEkAM07`
 
       await conn.sendMessage(jid, { text: welcomeMessage }, { quoted: null })
     } catch (error) {
@@ -693,10 +693,9 @@ async function generateDatabaseStats() {
       
       stats.topPlugins = topPlugins
     }
-    
     return `
 ┌─────────────────────────────┐
-│   🤖 MEGA-AI DASHBOARD 🤖   │
+│   🤖 GURU-BOT DASHBOARD 🤖   │
 ├─────────────────────────────┤
 │                             │
 │ 👥 Users: ${padRight(stats.users, 19)} │
@@ -722,6 +721,7 @@ ${stats.topPlugins ? `│ 🔝 Top Plugins:               │\n${stats.topPlugin
     return "Error generating dashboard statistics"
   }
 }
+    
 
 function formatUptime(seconds) {
   const days = Math.floor(seconds / (3600 * 24))
