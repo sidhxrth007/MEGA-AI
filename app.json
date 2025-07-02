@@ -8,18 +8,23 @@
   "stack": "container",
   "env": {
     "OWNERS": {
-      "description": "owner number",
+      "description": "Owners Phone Number",
+      "required": true,
+      "value": "923204566006"
+    },
+    "BOT_NUMBER": {
+      "description": "Phone Number On Wich You will Gets Pairing Code",
       "required": true,
       "value": ""
     },
     "BOTNAME": {
       "description": "Give your BOT a name",
-      "required": true,
+      "required": false,
       "value": "MEGA-AI"
     },
     "MONGODB_URI": {
       "description": "your mongodb database url",
-      "required": false,
+      "required": true,
       "value": ""
     },
     "MODE": {
@@ -45,7 +50,7 @@
     "statusview": {
       "description": "make it true if you want bot to view status",
       "required": false,
-      "value": ""
+      "value": "false"
     },
     "antidelete": {
       "description": "bot will forward deleted messages if you make it true",
