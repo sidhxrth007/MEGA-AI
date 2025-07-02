@@ -59,15 +59,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
          '🎉 *' +
         usedPrefix +
         'animemenu* - Animated Images,Stickers and Videos.\n\n' +
-         '🍒 *' +
-        usedPrefix +
-        'reactions* - Anime reactions menu for group.\n\n' +
         '🪁 *' +
         usedPrefix +
         'infoanime* - Full Information About Animes Like imdb.\n\n' +
-        '💡 *' +
-        usedPrefix +
-        'imagen* - Create Images and designs based on your thoughts/prompts.\n\n' +
         '🃏 *' +
         usedPrefix +
         'randompic* - Random Images you might like and love.\n\n' +
@@ -76,10 +70,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
         'textpro* - Generate Beautiful Logos Using Text Of Your Choice.\n\n' +
         '🎥 *' +
         usedPrefix +
-        'randomvid* - Random Videos you might like and love.\n\n' +
-        '🖍️ *' +
-        usedPrefix +
-        'fancy* - Fancy text generator Menu.' 
+        'randomvid* - Random Videos you might like and love.'
         break
 
     case 'botmenu':
@@ -108,7 +99,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *rentbot*
 ◈ • *runtime*
 ◈ • *server*
-◈ • *speedtest*
 ◈ • *stoprent*
 ◈ • *uptime*
 ╰─────────❍` //
@@ -117,16 +107,12 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       lkr=`
 ╭───『 *AI* 』─❍
 ◈ • *ai*
-◈ • *blackbox*
-◈ • *blackpink*
 ◈ • *bro*
 ◈ • *chatgpt*
 ◈ • *fact*
 ◈ • *google*
 ◈ • *googleit*
-◈ • *gimage*
 ◈ • *gpt4*
-◈ • *travel*
 ◈ • *why*
 ╰─────────❍` //   
  break
@@ -165,23 +151,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *typo*
 ◈ • *wgalaxy*
 ◈ • *wings*
-╰─────────❍` //
- break
-      case 'imagen':
-      case 'imagenai':
-      lkr=`
-╭───『 *IMAGEN* 』─❍
-◈ • *animefy*
-◈ • *cartoon*
-◈ • *dalle*
-◈ • *hercai-lexica*
-◈ • *imagev3*
-◈ • *lexica*
-◈ • *prodia*
-◈ • *raava*
-◈ • *shonin*
-◈ • *simurg*
-◈ • *v2beta*
 ╰─────────❍` //
  break
     case 'ownermenu':
@@ -329,9 +298,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
     case 'downloads':
       lkr = `
 ╭───『 *DOWNLOAD* 』─❍
-◈ • *apkdl*
 ◈ • *apksearch*
-◈ • *audio*
 ◈ • *capcut*
 ◈ • *dlstatus*
 ◈ • *facebook*
@@ -350,11 +317,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *npmstalk*
 ◈ • *pinterest*
 ◈ • *pinterest2*
-◈ • *play*
 ◈ • *play2*
 ◈ • *play5*
 ◈ • *playstore*
-◈ • *playvid*
 ◈ • *ringtone*
 ◈ • *rnekos*
 ◈ • *rwall*
@@ -363,8 +328,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *tiktok*
 ◈ • *ttstalk*
 ◈ • *twitter*
-◈ • *video*
-◈ • *wallpapers*
 ◈ • *ytmp3*
 ◈ • *ytmp4*
 ◈ • *ytsearch*
@@ -376,27 +339,17 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ╭───『 *ECONOMY* 』─❍
 ◈ • *addgold*
 ◈ • *addxp*
-◈ • *adventure*
 ◈ • *balance*
 ◈ • *bank*
-◈ • *bet*
 ◈ • *buyall*
 ◈ • *buych*
 ◈ • *claim/daily*
-◈ • *craft*
 ◈ • *deposit*
 ◈ • *give*
-◈ • *heal*
 ◈ • *leaderboard*
-◈ • *levelup*
 ◈ • *mine*
-◈ • *monthly*
-◈ • *opencrate*
 ◈ • *rob*
 ◈ • *sell*
-◈ • *shop*
-◈ • *todiamond*
-◈ • *tomoney*
 ◈ • *transfer*
 ◈ • *wallet*
 ◈ • *weekly*
@@ -410,7 +363,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *character*
 ◈ • *dare*
 ◈ • *flirt*
-◈ • *gay*
 ◈ • *hack*
 ◈ • *hornycard*
 ◈ • *lolicon*
@@ -421,37 +373,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *truth*
 ◈ • *waste*
 ◈ • *ytcomment*
-╰─────────❍` //
-      break
-      case 'animereactions':
-case 'reactions':
-lkr=`
-╭───『 *REACTIONS* 』─❍
-◈ • *awoo*
-◈ • *bite*
-◈ • *blush*
-◈ • *bonk*
-◈ • *bully*
-◈ • *cringe*
-◈ • *cry*
-◈ • *cuddle*
-◈ • *dance*
-◈ • *glomp*
-◈ • *happy*
-◈ • *handhold*
-◈ • *highfive*
-◈ • *hug*
-◈ • *kill*
-◈ • *kiss*
-◈ • *lick*
-◈ • *nom*
-◈ • *poke*
-◈ • *pat*
-◈ • *smug*
-◈ • *slap*
-◈ • *wave*
-◈ • *wink*
-◈ • *yeet*
 ╰─────────❍` //
       break
     case 'animemenu':
@@ -593,7 +514,6 @@ lkr=`
 ◈ • *fancy*
 ◈ • *filelength*
 ◈ • *google*
-◈ • *googleit*
 ◈ • *happymod*
 ◈ • *imdb*
 ◈ • *itunes*
@@ -618,7 +538,6 @@ lkr=`
 ◈ • *tourl*
 ◈ • *trace*
 ◈ • *translate*
-◈ • *true*
 ◈ • *wa*
 ◈ • *weather*
 ◈ • *whatmusic*

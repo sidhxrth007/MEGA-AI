@@ -66,11 +66,9 @@ let str = `
 ◈├• *dlmenu*
 ◈├• *economy*
 ◈├• *enable*
-◈├• *fancy*
 ◈├• *funmenu*
 ◈├• *gamesmenu*
 ◈├• *groupmenu*
-◈├• *imagen*
 ◈├• *infoanime*
 ◈├• *listmenu*
 ◈├• *listplugin*
@@ -82,7 +80,6 @@ let str = `
 ◈├• *nsfwmenu*
 ◈├• *randompic*
 ◈├• *randomvid*
-◈├• *reactions*
 ◈├• *stickermenu*
 ◈├• *textpro*
 ◈├• *toolsmenu*
