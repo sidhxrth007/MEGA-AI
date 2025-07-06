@@ -62,4 +62,5 @@ handler.help = ['tiktok', 'tt', 'tikdown', 'ttdl'];
 handler.tags = ['downloader'];
 handler.command = ['tiktok', 'tt', 'tikdown', 'ttdl'];
 
+handler.limit = true
 export default handler;

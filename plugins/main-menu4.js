@@ -93,13 +93,17 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *uptime*
 ╰─┬─★─☆─♪♪─❍
 ╭─┴❍「 *AI MENU* 」❍
-◈ • *ai*
-◈ • *bro*
 ◈ • *chatgpt*
+◈ • *stable*
+◈ • *flux*
+◈ • *dalle*
+◈ • *lexica*
 ◈ • *fact*
-◈ • *google*
-◈ • *googleit*
+◈ • *darky*
+◈ • *alexa*
 ◈ • *gpt4*
+◈ • *bro
+◈ • *ai*
 ◈ • *why*
 ╰─┬─★─☆─♪♪─❍
 ╭─┴❍「 *TEXTPRO* 」❍
@@ -154,7 +158,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *delsudo*
 ◈ • *enable*
 ◈ • *fakereply*
-◈ • *fullpp*
 ◈ • *getfile*
 ◈ • *getmsg*
 ◈ • *getplugin*
@@ -166,11 +169,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *listplugins*
 ◈ • *logout*
 ◈ • *notes*
-◈ • *readviewonce*
+◈ • *readvo*
 ◈ • *remove*
 ◈ • *restart*
-◈ • *save*
-◈ • *savecontact*
 ◈ • *savefile*
 ◈ • *setppbot*
 ◈ • *setprefix*
@@ -281,9 +282,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *mediafire*
 ◈ • *mega*
 ◈ • *npmstalk*
-◈ • *pinterest*
-◈ • *pinterest2*
-◈ • *play2*
+◈ • *pinvid*
+◈ • *pinimg*
+◈ • *play*
 ◈ • *play5*
 ◈ • *playstore*
 ◈ • *ringtone*
@@ -302,27 +303,15 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ╭─┴❍「 *ECONOMY* 」❍
 ◈ • *addgold*
 ◈ • *addxp*
-◈ • *adventure*
 ◈ • *balance*
 ◈ • *bank*
-◈ • *bet*
 ◈ • *buyall*
 ◈ • *buych*
-◈ • *claim/daily*
-◈ • *craft*
+◈ • *claim*
 ◈ • *deposit*
 ◈ • *give*
-◈ • *heal*
 ◈ • *leaderboard*
-◈ • *levelup*
 ◈ • *mine*
-◈ • *monthly*
-◈ • *opencrate*
-◈ • *rob*
-◈ • *sell*
-◈ • *shop*
-◈ • *todiamond*
-◈ • *tomoney*
 ◈ • *transfer*
 ◈ • *wallet*
 ◈ • *weekly*
@@ -456,26 +445,24 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ╰─┬─★─☆─♪♪─❍
 ╭─┴❍「 *TOOLS MENU* 」❍
 ◈ • *android*
-◈ • *autosticker*
 ◈ • *base64*
 ◈ • *calc*
 ◈ • *carbon*
 ◈ • *checkmail*
-◈ • *course*
 ◈ • *define*
 ◈ • *element*
 ◈ • *enhance*
 ◈ • *filelength*
 ◈ • *google*
 ◈ • *googleit*
-◈ • *happymod*
 ◈ • *imdb*
 ◈ • *itunes*
 ◈ • *linux*
 ◈ • *lyrics*
 ◈ • *nowa*
 ◈ • *pokedex*
-◈ • *qrmaker*
+◈ • *qmkr*
+◈ • *qrcode*
 ◈ • *quote*
 ◈ • *readmore*
 ◈ • *readqr*
@@ -488,7 +475,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *technews*
 ◈ • *tinyurl*
 ◈ • *time*
-◈ • *tocartoon*
 ◈ • *topdf*
 ◈ • *tourl*
 ◈ • *trace*

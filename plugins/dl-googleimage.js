@@ -69,4 +69,5 @@ handler.help = ['gimage', 'googleimage'];
 handler.tags = ['search'];
 handler.command = ['gimage', 'googleimage'];
 
+handler.limit = true
 export default handler;

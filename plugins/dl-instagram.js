@@ -80,5 +80,5 @@ const handler = async (m, { conn, args }) => {
 handler.help = ['instagram', 'ig', 'igdl', 'instagramdl', 'insta', 'igdownload'];
 handler.tags = ['downloader'];
 handler.command = ['instagram', 'ig', 'igdl', 'instagramdl', 'insta', 'igdownload'];
-
+handler.limit = true
 export default handler;

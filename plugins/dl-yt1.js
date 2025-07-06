@@ -104,5 +104,5 @@ const handler = async (m, { args, conn, usedprefix }) => {
 handler.help = ['ytmp3', 'yta'];
 handler.tags = ['dl'];
 handler.command = ['ytmp3', 'yta'];
-
+handler.limit = true
 export default handler;

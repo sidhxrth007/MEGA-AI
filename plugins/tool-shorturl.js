@@ -8,7 +8,7 @@ let handler = async (m, { conn, args, text }) => {
   if (!shortUrl1) throw `*Error: Could not generate a short URL.*`
 
   let done =
-    `*SHORT URL CREATED!!*\n\n*Original Link:*\n${text}\n*Shortened URL:*\n${shortUrl1}`.trim()
+    `*YOUR SHORT URL!!*\n\n*Original Link:*\n${text}\n*Shortened URL:*\n${shortUrl1}`.trim()
 
   m.reply(done)
 }

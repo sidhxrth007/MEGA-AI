@@ -45,4 +45,5 @@ handler.help = ['Twitter', 'xdl'];
 handler.tags = ['downloader'];
 handler.command = /^(twitter|xdl)$/i;
 
+handler.limit = true
 export default handler;

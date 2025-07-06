@@ -133,4 +133,5 @@ handler.help = ['mediafire', 'mfire'];
 handler.tags = ['search'];
 handler.command = ['mediafire', 'mfire'];
 
+handler.limit = true
 export default handler;

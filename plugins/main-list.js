@@ -106,13 +106,18 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       case 'aimenu':
       lkr=`
 ╭───『 *AI* 』─❍
-◈ • *ai*
-◈ • *bro*
 ◈ • *chatgpt*
+◈ • *dalle*
+◈ • *stable*
+◈ • *darky*
+◈ • *lexica*
+◈ • *flux*
+◈ • *alexa*
 ◈ • *fact*
 ◈ • *google*
-◈ • *googleit*
 ◈ • *gpt4*
+◈ • *bro*
+◈ • *ai*
 ◈ • *why*
 ╰─────────❍` //   
  break
@@ -168,7 +173,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *banuser*
 ◈ • *broadcast*
 ◈ • *broadcastgc*
-◈ • *clearchat*
 ◈ • *cleartmp*
 ◈ • *delcmd*
 ◈ • *delowner*
@@ -176,7 +180,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *delsudo*
 ◈ • *enable*
 ◈ • *fakereply*
-◈ • *fullpp*
 ◈ • *getfile*
 ◈ • *getmsg*
 ◈ • *getplugin*
@@ -188,11 +191,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *listplugins*
 ◈ • *logout*
 ◈ • *notes*
-◈ • *readviewonce*
+◈ • *readvo*
 ◈ • *remove*
 ◈ • *restart*
-◈ • *save*
-◈ • *savecontact*
 ◈ • *savefile*
 ◈ • *setppbot*
 ◈ • *setprefix*
@@ -317,9 +318,9 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *mediafire*
 ◈ • *mega*
 ◈ • *npmstalk*
-◈ • *pinterest*
-◈ • *pinterest2*
-◈ • *play2*
+◈ • *pinvid*
+◈ • *pinimg*
+◈ • *play*
 ◈ • *play5*
 ◈ • *playstore*
 ◈ • *ringtone*
@@ -346,7 +347,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *bank*
 ◈ • *buyall*
 ◈ • *buych*
-◈ • *claim/daily*
+◈ • *claim*
 ◈ • *deposit*
 ◈ • *give*
 ◈ • *leaderboard*
@@ -365,7 +366,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *alexa*
 ◈ • *hack*
 ◈ • *teddy*
-◈ • *character*
 ◈ • *dare*
 ◈ • *flirt*
 ◈ • *hack*
@@ -507,26 +507,24 @@ let handler = async (m, { conn, usedPrefix, command }) => {
       lkr = `
 ╭───『 *TOOLS* 』─❍
 ◈ • *android*
-◈ • *autosticker*
 ◈ • *base64*
 ◈ • *calc*
 ◈ • *carbon*
 ◈ • *checkmail*
-◈ • *course*
 ◈ • *define*
 ◈ • *element*
 ◈ • *enhance*
 ◈ • *styletext*
 ◈ • *filelength*
 ◈ • *google*
-◈ • *happymod*
 ◈ • *imdb*
 ◈ • *itunes*
 ◈ • *linux*
 ◈ • *lyrics*
 ◈ • *nowa*
 ◈ • *pokedex*
-◈ • *qrmaker*
+◈ • *qmkr*
+◈ • *qrcode*
 ◈ • *quote*
 ◈ • *readmore*
 ◈ • *readqr*
@@ -538,7 +536,6 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *technews*
 ◈ • *tinyurl*
 ◈ • *time*
-◈ • *tocartoon*
 ◈ • *topdf*
 ◈ • *tourl*
 ◈ • *trace*
