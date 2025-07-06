@@ -225,9 +225,8 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 ⛊ welcome
 ⛊ antilink
 ⛊ nsfw
-⛊ autosticker
+⛊ pmblocker
 ⛊ detect
-⛊ jarvis
 ⛊ antispam
 ⛊ antitoxic
 ╰──────────❍ 
@@ -237,6 +236,9 @@ let handler = async (m, { conn, usedPrefix, command, args, isOwner, isAdmin, isR
 ╰──────────❍
 ◈──『 *OWNER*』
 ⛊ onlydm
+⛊ self
+⛊ restrict
+⛊ anticall
 ⛊ grouponly
 ⛊ autotype
 ⛊ autobio
