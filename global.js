@@ -174,7 +174,7 @@ const connectionOptions = {
   },
   msgRetryCounterCache,
   defaultQueryTimeoutMs: 0,
-  syncFullHistory: true,
+  syncFullHistory: false,
 }
 
 global.conn = makeWASocket(connectionOptions)
