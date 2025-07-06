@@ -102,7 +102,7 @@ let handler = async (m, { conn, usedPrefix, command }) => {
 ◈ • *darky*
 ◈ • *alexa*
 ◈ • *gpt4*
-◈ • *bro
+◈ • *bro*
 ◈ • *ai*
 ◈ • *why*
 ╰─┬─★─☆─♪♪─❍
