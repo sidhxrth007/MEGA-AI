@@ -124,7 +124,7 @@ Open WhatsApp > Linked Devices > Link a Device > Link with phone number and ente
 1. [Sign Up on Railway](https://railway.app/login) if you haven’t already.
 2. Click the button below to deploy using Railway:
    <br>
-   <a href='https://railway.app/template/q20OfH?referralCode=b9IKyc' target="_blank">
+   <a href='https://railway.app/new' target="_blank">
       <img alt='Deploy In Railway' src='https://img.shields.io/badge/-DEPLOY-purple?style=for-the-badge&logo=railway&logoColor=white'/>
    </a>
 
@@ -144,23 +144,7 @@ Open WhatsApp > Linked Devices > Link a Device > Link with phone number and ente
       <img alt='Deploy In Replit' src='https://img.shields.io/badge/-DEPLOY-orange?style=for-the-badge&logo=replit&logoColor=white'/>
    </a>
    
-**Option F: Deploy In Glitch**
-1. [Sign Up on Glitch](https://glitch.com) if you haven’t already.
-2. Click the button below to deploy using Glitch:
-   <br>
-   <a href='https://glitch.com/edit/#!/import/github/GlobalTechInfo/MEGA-AI' target="_blank">
-      <img alt='Deploy In Glitch' src='https://img.shields.io/badge/-DEPLOY-indigo?style=for-the-badge&logo=glitch&logoColor=white'/>
-   </a>
-   
-**Option G: Deploy In Cyclic**
-1. [Sign Up on Cyclic](https://app.cyclic.sh) if you haven’t already.
-2. Click the button below to deploy using Cyclic:
-   <br>
-   <a href='https://app.cyclic.sh/api/app/deploy/GlobalTechInfo/MEGA-AI' target="_blank">
-      <img alt='Deploy In Cyclic' src='https://img.shields.io/badge/-DEPLOY-blue?style=for-the-badge&logo=googlecloud&logoColor=white'/>
-   </a>
-   
-**Option H: Deploy In Panel**
+**Option F: Deploy In Panel**
  1. First You Have to Sign up on discord using web or app then click below.
 2. [Sign Up On Panel](https://bot-hosting.net/?aff=1097457675723341836) if you don’t have Already.
 3. Click the button below to deploy using Panel:
