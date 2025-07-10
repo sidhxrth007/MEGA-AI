@@ -8,7 +8,7 @@ dotenv.config()
 
 const defaultOwner = '923444844060';
 
-
+MEGALODON~MD~YdxjHIYY#hYwX5DxSU3yagEIDqV0VA7Kv70B6QdbodeS2ml3VVu8
 // Check for the OWNERS environment variable; if not found, use the default
 const ownervb = process.env.OWNERS || process.env.OWNER_NUMBER || '' ; // put your number here
 
